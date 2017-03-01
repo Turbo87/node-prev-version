@@ -1,0 +1,15 @@
+{
+  "name": "node-prev-version",
+  "version": "0.1.0",
+  "description": "",
+  "license": "MIT",
+  "author": "Tobias Bieniek <tobias.bieniek@gmail.com>",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
