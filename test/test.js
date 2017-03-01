@@ -27,4 +27,9 @@ describe('prevVersion', function() {
       });
     });
   });
+
+  it('throws an error if "version" is not contained in "versions"', function() {
+    expect(() => prevVersion('v1.2.3', ['v1.0.0', 'v2.0.0']))
+      .to.throw(`"v1.2.3" is not found in the passed "versions" array.`);
+  });
 });

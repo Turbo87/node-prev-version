@@ -5,6 +5,11 @@ module.exports = function(version, versions) {
     return { version, invalid: true };
   }
 
+  let index = versions.indexOf(version);
+  if (index === -1) {
+    throw new Error(`"${version}" is not found in the passed "versions" array.`);
+  }
+
   return {
     version,
   };
