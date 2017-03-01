@@ -10,7 +10,6 @@ module.exports = function(version, versions) {
     throw new Error(`"${version}" is not found in the passed "versions" array.`);
   }
 
-  return {
-    version,
-  };
+  let previous = versions[index - 1] || null;
+  return { version, previous };
 };
