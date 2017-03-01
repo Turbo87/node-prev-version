@@ -1,7 +1,7 @@
 {
   "name": "node-prev-version",
   "version": "0.1.0",
-  "description": "",
+  "description": "low-level library for figuring out the \"previous\" release version",
   "license": "MIT",
   "author": "Tobias Bieniek <tobias.bieniek@gmail.com>",
   "main": "index.js",
