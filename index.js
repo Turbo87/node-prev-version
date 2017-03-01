@@ -10,6 +10,10 @@ module.exports = function(version, versions) {
     throw new Error(`"${version}" is not found in the passed "versions" array.`);
   }
 
-  let previous = versions[index - 1] || null;
+  let previousVersions = versions
+    .filter((_, _index) => _index < index)
+    .filter(version => semver.valid(version));
+
+  let previous = previousVersions.slice(-1)[0] || null;
   return { version, previous };
 };
