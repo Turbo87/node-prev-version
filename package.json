@@ -1,5 +1,5 @@
 {
-  "name": "node-prev-version",
+  "name": "prev-version",
   "version": "0.1.0",
   "description": "low-level library for figuring out the \"previous\" release version",
   "license": "MIT",
