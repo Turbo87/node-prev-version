@@ -3,3 +3,12 @@ node_js:
   - 'stable'
   - '6'
   - '4'
+
+deploy:
+  provider: npm
+  email: tobias.bieniek@gmx.de
+  api_key:
+    secure: rh2yuN0YsBJrdcJxkSTOUg9WofI0KoMRgyYnak7ylNuJnmST7NEnVFEOZN381LgFvWpHqlZVHwNB54IvpJWVEnoM1Hg/tX/RF1pXbGLWaBbltHmPytTvkLcgNx8SSVqm728V/Et+fBCRcVN7Z5P7wU25dTH8Y6DRhPjGEA5suTHh5mC0K/afwcy3f7yQKA9WRvQRgOcPOOEDWwgGwS9iqR9eFcUCfrDPiAPyCSVXZ8EAmNZYkSL1ojxFVPnBMVxCQzSJR3tOXyUdjysMoYvrr/rT3eLV8nIJdBYQTHcSMh2yN487Jxih/xV9h5IYxjxU/gprQPAMG9A3+6wczO1/70zExhtnYISI/S2zrq24Icn1C30rmNMBS98cCF8n1PHzgXb2UjVNs/2BGQnm0rSTMbnF+KNUy3CmKddDdrbtF/93Cl39MOi55X7CH1UilT0uyAmBUt/aAtN5ynnuJceKm00kxzr/UeO9+BBdcpCGyHk00Ult2pCnfsCnfEBTIqyfncNeyx4AJbqnkgOwvNgj/Xs6LleMgBvxLDdIlFGs7HDbvbv/WlVPLEkjhqSmIFGwGla6jKLrP/XvQPjJuPLTXhVzeTS7TYDJ088UvVZDGiaF68veGGNcxYTS43qUgoYGEVndb8aa0e0/WkiHjqNFPPD5mN6erw+bvR0Gp0ppeOI=
+  on:
+    tags: true
+    repo: Turbo87/node-prev-version
